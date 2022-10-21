@@ -20,10 +20,10 @@ pip install ocpdet
 
 ## Examples
 
-- [CUSUM.ipynb](https://nbviewer.jupyter.org/github/vkhamesi/ocpdet/tree/main/docs/CUSUM.ipynb)  
-- [EWMA.ipynb](https://nbviewer.jupyter.org/github/vkhamesi/ocpdet/tree/main/docs/EWMA.ipynb)  
-- [TwoSample.ipynb](https://nbviewer.jupyter.org/github/vkhamesi/ocpdet/tree/main/docs/TwoSample.ipynb)  
-- [NeuralNetwork.ipynb](https://nbviewer.jupyter.org/github/vkhamesi/ocpdet/tree/main/docs/NeuralNetwork.ipynb)  
+- [CUSUM.ipynb](https://github.com/vkhamesi/ocpdet/blob/main/docs/CUSUM.ipynb)  
+- [EWMA.ipynb](https://github.com/vkhamesi/ocpdet/blob/main/docs/EWMA.ipynb)  
+- [TwoSample.ipynb](https://github.com/vkhamesi/ocpdet/blob/main/docs/TwoSample.ipynb)  
+- [NeuralNetwork.ipynb](https://github.com/vkhamesi/ocpdet/blob/main/docs/NeuralNetwork.ipynb)  
 
 ## How to cite this work
 
