@@ -1,16 +1,16 @@
 # [ocpdet](https://pypi.org/project/ocpdet/)
-OCPDet is a Python package for online changepoint detection, implementing state-of-the-art algorithms and a novel approach.
+OCPDet is an open-source Python package for online changepoint detection, implementing state-of-the-art algorithms and a novel approach.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7232039.svg)](https://doi.org/10.5281/zenodo.7232039)
 
-A Python package for online changepoint detection in univariate and multivariate data.
+This package is the outcome of my Master Thesis at Imperial College London within the MSc in Statistics, Department of Mathematics.
 
 Algorithms implemented in ocpdet are
 
 - **CUSUM**: Cumulative Sum algorithm, proposed by Page (1954)
 - **EWMA**: Exponentially Weighted Moving Average algorithm, proposed by Roberts (1959)
 - **Two Sample tests**: Nonparametric hypothesis testing for changepoint detection, proposed by Ross et al. (2011)
-- **Neural Networks**: Novel approach based on sequentially learning neural networks, proposed by Hushchyn et al. (2020) and extended to online context (Master's Thesis) 
+- **Neural Networks**: Novel approach based on sequentially learning neural networks, proposed by Hushchyn et al. (2020) and extended to online context (Master Thesis) 
 
 ## Installation
 
