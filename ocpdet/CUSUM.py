@@ -28,6 +28,12 @@ class CUSUM():
     Attributes
     ----------
     
+    _mu : ndarray of shape (n_samples,)
+        Recording of all mean values.
+    
+    _sigma : ndarray of shape (n_samples,)
+        Recording of all standard deviation values.
+    
     S : ndarray of shape (n_samples,)
         S statistic calculated sequentially after processing each new observation
         which measures increases.
@@ -55,6 +61,8 @@ class CUSUM():
         self.mu = mu
         self.sigma = sigma
 
+        self._mu = [mu]
+        self._sigma = [sigma]
         self.S = [0.]
         self.T = [0.]
         self.changepoints = []
@@ -74,6 +82,8 @@ class CUSUM():
         mu_new = self.mu + (data_new - self.mu) / self.n
         self.sigma = (self.sigma ** 2 + ((data_new - self.mu) * (data_new - mu_new) - self.sigma ** 2) / self.n) ** 0.5
         self.mu = mu_new
+        self._mu.append(mu_new)
+        self._sigma.append(self.sigma)
         
     def update_statistics(self, 
                           data_new: float):
