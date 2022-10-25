@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.0.1",
     author="Victor Khamesi",
     author_email="victor.khamesi21@imperial.ac.uk",
-    description="A Python library for online changepoint detection, implementing well-known and recent algorithms.",
+    description="A Python package for online changepoint detection, implementing state-of-the-art algorithms and a novel approach.",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/vkhamesi/ocpdet",
