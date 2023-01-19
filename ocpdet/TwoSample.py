@@ -34,6 +34,7 @@ class TwoSample():
         self.threshold = threshold
         self.statistic = statistic
         
+        self.D = [1.]
         self.t = 2
         self.changepoints = []
         
@@ -67,6 +68,7 @@ class TwoSample():
         """
         Dn = []
         tau = 0
+        self.t = 2
         while self.t < len(X):
             Dkn = []
             for k in range(1, self.t):
@@ -79,6 +81,7 @@ class TwoSample():
                         Dkn.append(abs(self.statistic(x, y).statistic))
                     except: # Edge cases with sample sizes 
                         Dkn.append(0)
+            self.D.append(max(Dkn))
             if max(Dkn) < self.threshold:
                 Dn.append(max(Dkn))
                 self.t += 1
@@ -106,5 +109,6 @@ class TwoSample():
         while tau is not None:
             data = data[tau:]
             tau = self.process_batch(data)
+            self.D.append(self.D[-1])
             cp.append(tau)
         self.changepoints = np.cumsum(cp[:-1])
