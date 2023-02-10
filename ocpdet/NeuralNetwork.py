@@ -100,6 +100,7 @@ class NeuralNetwork():
             self.f = f
         self.r = r
         self.L = L
+        self.mu = [0.]
         self.burnin = burnin
         self.timeout = timeout
         if method == "bump" or method == "increase":
@@ -170,6 +171,7 @@ class NeuralNetwork():
             mu_hat = mu_hat_new
             n += 1
             self.sigma_Z.append(sigma_hat * np.sqrt((self.r / (2 - self.r)) * (1 - (1 - self.r) ** (2 * j))))
+            self.mu.append(mu_hat)
         for j in range(self.burnin, len(self.dissimilarity)):
             self.Z.append((1 - self.r) * self.Z[j-1] + self.r * self.dissimilarity[j])
             mu_hat_new = 1/n * ((n-1) * mu_hat + self.dissimilarity[j])
@@ -178,6 +180,7 @@ class NeuralNetwork():
             mu_hat = mu_hat_new
             n += 1
             self.sigma_Z.append(sigma_hat * np.sqrt((self.r / (2 - self.r)) * (1 - (1 - self.r) ** (2 * j))))
+            self.mu.append(mu_hat)
             if self.Z[j] > mu_hat + self.sigma_Z[j] * self.L:
                 if j - last_cp > self.timeout:
                     self.changepoints.append(j)
@@ -200,6 +203,7 @@ class NeuralNetwork():
             mu_hat = mu_hat_new
             n += 1
             self.sigma_Z.append(sigma_hat * np.sqrt((self.r / (2 - self.r)) * (1 - (1 - self.r) ** (2 * j))))
+            self.mu.append(mu_hat)
         for j in range(self.burnin, len(self.dissimilarity)):
             self.Z.append((1 - self.r) * self.Z[j-1] + self.r * self.dissimilarity[j])
             mu_hat_new = 1/n * ((n-1) * mu_hat + self.dissimilarity[j])
@@ -208,6 +212,7 @@ class NeuralNetwork():
             mu_hat = mu_hat_new
             n += 1
             self.sigma_Z.append(sigma_hat * np.sqrt((self.r / (2 - self.r)) * (1 - (1 - self.r) ** (2 * j))))
+            self.mu.append(mu_hat)
             if self.Z[j] > mu_hat + self.sigma_Z[j] * self.L and last_det is None:
                 last = "+"
                 last_det = j
