@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="ocpdet",
-    version="0.0.4",
+    version="0.0.5",
     author="Victor Khamesi",
     author_email="victor.khamesi21@imperial.ac.uk",
     description="A Python package for online changepoint detection, implementing state-of-the-art algorithms and a novel approach.",
@@ -15,7 +15,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: BSD-2 Clause License",
         "Operating System :: OS Independent",
     ],
     install_requires=[
