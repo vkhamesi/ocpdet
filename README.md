@@ -1,9 +1,6 @@
 # [ocpdet](https://pypi.org/project/ocpdet/)
 OCPDet is an open-source Python package for online changepoint detection, implementing state-of-the-art algorithms and a novel approach.
 
-[![PyPI version](https://badge.fury.io/py/ocpdet.svg)](https://badge.fury.io/py/ocpdet) 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7232039.svg)](https://doi.org/10.5281/zenodo.7232039)
-
 This package is the outcome of my Master Thesis at Imperial College London within the MSc in Statistics, Department of Mathematics.
 
 Algorithms implemented in ocpdet are
@@ -30,7 +27,7 @@ pip install ocpdet
 
 Here is a suggestion to cite this GitHub repository:
 
-> Victor Khamesi. (2022). ocpdet: A Python package for online changepoint detection in univariate and multivariate data. (Version v0.0.4). Zenodo. https://doi.org/10.5281/zenodo.7232039
+> Victor Khamesi. (2022). ocpdet: A Python package for online changepoint detection in univariate and multivariate data. (Version v0.0.5). Zenodo. https://doi.org/10.5281/zenodo.7232039
 
 And a possible BibTeX entry:
 
