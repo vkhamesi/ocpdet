@@ -1,6 +1,7 @@
 # [ocpdet](https://pypi.org/project/ocpdet/)
 OCPDet is a Python package for online changepoint detection, implementing state-of-the-art algorithms and a novel approach.
 
+[![PyPI version](https://badge.fury.io/py/ocpdet.svg)](https://badge.fury.io/py/ocpdet) 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7232039.svg)](https://doi.org/10.5281/zenodo.7232039)
 
 A Python package for online changepoint detection in univariate and multivariate data.
@@ -29,7 +30,7 @@ pip install ocpdet
 
 Here is a suggestion to cite this GitHub repository:
 
-> Victor Khamesi. (2022). ocpdet: A Python package for online changepoint detection in univariate and multivariate data. (Version v0.0.1). Zenodo. https://doi.org/10.5281/zenodo.7232039
+> Victor Khamesi. (2022). ocpdet: A Python package for online changepoint detection in univariate and multivariate data. (Version v0.0.4). Zenodo. https://doi.org/10.5281/zenodo.7232039
 
 And a possible BibTeX entry:
 
@@ -40,7 +41,7 @@ And a possible BibTeX entry:
   month        = oct,
   year         = 2022,
   publisher    = {Zenodo},
-  version      = {v0.0.1},
+  version      = {v0.0.5},
   doi          = {10.5281/zenodo.7232039},
   url          = {https://doi.org/10.5281/zenodo.7232039}
 }
@@ -48,4 +49,4 @@ And a possible BibTeX entry:
 
 ## License
 
-The non-software content of this project is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), and the software code is licensed under the [MIT license](https://opensource.org/licenses/mit-license.php).
+The non-software content of this project is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/), and the software code is licensed under the [BSD-2 Clause license](https://opensource.org/licenses/BSD-2-Clause).
