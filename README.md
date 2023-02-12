@@ -31,7 +31,7 @@ pip install ocpdet
 
 Here is a suggestion to cite this GitHub repository:
 
-> Victor Khamesi. (2022). ocpdet: A Python package for online changepoint detection in univariate and multivariate data. (Version v0.0.5). Zenodo. https://doi.org/10.5281/zenodo.7232039
+> Victor Khamesi. (2022). ocpdet: A Python package for online changepoint detection in univariate and multivariate data. (Version v0.0.5). Zenodo. https://doi.org/10.5281/zenodo.7632721
 
 And a possible BibTeX entry:
 
@@ -43,8 +43,8 @@ And a possible BibTeX entry:
   year         = 2022,
   publisher    = {Zenodo},
   version      = {v0.0.5},
-  doi          = {10.5281/zenodo.7232039},
-  url          = {https://doi.org/10.5281/zenodo.7232039}
+  doi          = {10.5281/zenodo.7632721},
+  url          = {https://doi.org/10.5281/zenodo.7632721}
 }
 ```
 
