@@ -3,7 +3,6 @@ OCPDet is an open-source Python package for online changepoint detection, implem
 
 [![PyPI](https://img.shields.io/pypi/v/ocpdet?color=g)](https://img.shields.io/pypi/v/ocpdet?color=g)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7632721.svg)](https://doi.org/10.5281/zenodo.7632721)
-[![Downloads](https://img.shields.io/pypi/dm/ocpdet.svg)](https://img.shields.io/pypi/dm/ocpdet)
 
 This package is the outcome of my Master Thesis at Imperial College London within the MSc in Statistics, Department of Mathematics.
 
