@@ -97,7 +97,7 @@ class CUSUM():
             CUSUM algorithm formulas.
         """
         self.S.append(max(0, self.S[-1] + (data_new - self.mu) / self.sigma - self.k))
-        self.T.append(max(0, self.S[-1] - (data_new - self.mu) / self.sigma - self.k))
+        self.T.append(max(0, self.T[-1] - (data_new - self.mu) / self.sigma - self.k))
     
     def decision_rule(self, 
                       i: int):
