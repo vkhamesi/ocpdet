@@ -1,5 +1,3 @@
-<meta name="google-site-verification" content="mjj6bKlEnc6qSRihI2ZEsNxGiHOAB66CNrUMAge5fIo" />
-
 # [ocpdet](https://pypi.org/project/ocpdet/)
 OCPDet is an open-source Python package for online changepoint detection, implementing state-of-the-art algorithms and a novel approach, using a `scikit-learn` style API.
 
